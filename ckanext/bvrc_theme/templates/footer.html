@@ -1,0 +1,57 @@
+<footer id="site-footer">
+    <div class="footer-top">
+      <div class="container-fluid">
+        {% block footer_content %}  
+        <div class="row footer-row">
+
+          <div class="col-lg-6 col-md-6 footer-info">
+            <a href="https://bvcentre.ca/"><img src="/img/bvrc-logo-white.png" alt=""></a>
+            <p class="footer-logo">Data Hub</p>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/bulkleyvalleyresearchcentre"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@bulkleyvalleyresearchcentr5807"><i class="fa fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 footer-links">
+            {% block footer_nav %}  
+            <h4>Quick Links</h4>
+            <ul>
+              {% block footer_links %}  
+                <li><a href="{{ h.url_for('home.about') }}"><i class="fa fa-caret-right"></i>About Us</a></li>
+              {% endblock %}  
+              <li><a href="#"><i class="fa fa-caret-right"></i>Help Page</a></li>
+              <li><a href="#"><i class="fa fa-caret-right"></i>Terms and Conditions</a></li>
+              <li><a href="http://www.ckan.org/"><i class="fa fa-caret-right"></i>About CKAN </a></li>
+              <li><a href="{{ api_url }}"><i class="fa fa-caret-right"></i>CKAN API</a></li>
+            </ul>
+            {% endblock %}
+          </div>
+
+          <div class="col-lg-3 col-md-3 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              3731 1st Avenue, Smithers, BC.<br>
+              <strong>Phone:</strong> +1 250 847 2827<br>
+              <strong>Email:</strong> info@bvcentre.ca<br>
+            </p><br>
+          </div>
+
+        </div>
+        {% endblock %}  
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Bulkley Valley Research Centre</strong>. All Rights Reserved
+      </div>
+    </div>
+
+    {% block footer_debug %}
+    {% if g.debug %}
+      {% include 'snippets/debug.html' %}
+    {% endif %}
+  {% endblock %}
+  </footer>

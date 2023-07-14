@@ -1,0 +1,77 @@
+{% ckan_extends %}
+{% block primary_content %}
+  <div role="main" class="hero">
+    <div class="overlay"></div>
+        <div class="hero">
+            <div class="header-text">
+                <div class="col-md-12">
+                    <div class="container">
+                      <h1>Bulkley Valley Research Centre Data Hub</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla metus dolor, tempor et elementum in, dignissim non sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sapien nisl, suscipit et justo vitae, scelerisque molestie odio. Vivamus elementum euismod tristique. Phasellus volutpat libero bibendum, tincidunt orci sit amet, vehicula justo. Nulla feugiat accumsan odio, nec euismod velit tempor non.</p>
+                      <button class="btn-blue">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+  
+  <div class="container-search">
+    <div class="row">
+        <div class="col-md-12">
+          <div class="container">
+            {% block search %}
+            {% snippet 'home/snippets/search.html' %}
+            {% endblock %}
+          </div>
+        </div>
+    </div>
+  </div>
+ 
+  <section id="section-datahub">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col1">
+          <img src="img/forest.jpeg" alt="BVRC Data Hub">
+        </div>
+        <div class="col-md-6 col2">
+          <div class="abt-heading">The Data Hub</div>
+          <div class="abt-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla metus dolor, tempor et elementum in, dignissim non sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sapien nisl, suscipit et justo vitae, scelerisque molestie odio. Vivamus elementum euismod tristique. Phasellus volutpat libero bibendum, tincidunt orci sit amet, vehicula justo. Nulla feugiat accumsan odio, nec euismod velit tempor non.                  
+          </div>
+          <div class="abt-button"><a class="btn-blue" href="/about">Learn More</a></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section-bvrc">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col1">
+          <div class="abt-heading">The Centre</div>
+          <div class="abt-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla metus dolor, tempor et elementum in, dignissim non sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sapien nisl, suscipit et justo vitae, scelerisque molestie odio. Vivamus elementum euismod tristique. Phasellus volutpat libero bibendum, tincidunt orci sit amet, vehicula justo. Nulla feugiat accumsan odio, nec euismod velit tempor non.                  
+          </div>
+          <div class="abt-button"><a class="btn-blue" href="https://bvcentre.ca/">Learn More</a></div>
+        </div>
+        <div class="col-md-6 col2">
+          <img src="img/forest.jpeg" alt="BVRC Data Hub">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="funding-partners">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ">
+          <div class="heading">Funding Partners</div>
+          <div class="partner-imgs">
+            <img src="img/rbc-tfn.png" alt="RBC Tech For Nature">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
