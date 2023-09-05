@@ -58,7 +58,7 @@ header.masthead{
 }
 
 .account-masthead{
-    background-color: #26201d !important;
+    background-color: #15689d !important;
 }
 
 .account-masthead .account ul li a{
@@ -75,7 +75,7 @@ header.masthead{
 .masthead .nav > li:hover a{
     border-radius: none !important;
     background-color: transparent !important;
-    color: #33afea !important;
+    color: #15689d !important;
     transition: all .4s ease !important;
     -webkit-transition: all .4s ease !important;
 }
@@ -83,7 +83,7 @@ header.masthead{
 .masthead .nav > li:hover a, .masthead .nav li:focus a, .masthead .nav > li.active a{
     border-radius: none !important;
     background-color: transparent !important;
-    color: #33afea !important;
+    color: #15689d !important;
 }
 
 
@@ -119,6 +119,11 @@ header.masthead{
 
 .navbar-collapse{
     flex-grow: unset !important;
+    background-color: #d2dee1;
+    border-radius: 17px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1) !important;
+    margin-bottom: 20px;
+
 }
 
 .navbar-toggle{
@@ -134,6 +139,9 @@ header.masthead{
   -webkit-transition: all .4s ease !important;
 }
 
+.masthead .section{
+  margin-left: 20px;
+}
 /*--------------------------- 
     HOME
 -------------------------- */
@@ -168,12 +176,12 @@ header.masthead{
     position: absolute;
     z-index: 20;
     margin: auto;
-    margin-top: 230px;
+    margin-top: 320px;
     text-align: left;
 }
 
 .header-text h1{
-    font-size: 25px;
+    font-size: 35px;
     text-transform: uppercase;
     letter-spacing: .2rem;
 }
@@ -258,7 +266,6 @@ header.masthead{
 .search-form .search-input.search-giant input {
   font-size: 16px;
   padding: 15px;
-  width: 1000px;
 } 
 
 .homepage .module-search{
@@ -289,6 +296,18 @@ header.masthead{
 .homepage .module-search .tags h3 {
   font-size: 17px !important;
   letter-spacing: .2rem;
+}
+
+.tag{
+  color: #fff !important;
+  background-color: #33afea !important;
+}
+
+.tag:hover{
+  background-color: #22759c;
+  color: #fff !important;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
 }
 
 /*--------------------------------------------------------------
@@ -409,7 +428,6 @@ header.masthead{
 }
 
 #funding-partners img{
-  border: solid white 10px;
 }
 
 #funding-partners .heading{
@@ -428,11 +446,16 @@ header.masthead{
   align-items: center;
 }
 
+.rbc{
+  width: 400px;
+  height: auto;
+}
+
 /*--------------------------- 
     FOOTER
 -------------------------- */
   #site-footer {
-    background: #26201d !important;
+    background: #15689d !important;
     padding:25px 0 25px 0;
     color: #fff;
     font-size: 14px;
@@ -514,7 +537,7 @@ header.masthead{
   
   .footer-top .social-links a:hover {
     background: #33afea;
-    color: #fff;
+    color: #fff !important;
     text-decoration: none;
     transition: all .4s ease;
   -webkit-transition: all .4s ease;
