@@ -8,30 +8,30 @@
                     <div class="container">
                       <h1>Bulkley Valley Research Centre Data Hub</h1>
                       <p>A centralized platform to manage research data related to the natural resources sector.</p>
-                      <button class="btn-blue">Learn More</button>
+                      {% block search %}
+                      {% snippet 'home/snippets/search.html' %}
+                      {% endblock %}
                     </div>
                 </div>
             </div>
         </div>
   </div>
   
-  <div class="container-search">
+  <!-- <div class="container-search">
     <div class="row">
         <div class="col-md-12">
           <div class="container">
-            {% block search %}
-            {% snippet 'home/snippets/search.html' %}
-            {% endblock %}
+            
           </div>
         </div>
     </div>
-  </div>
+  </div> -->
  
   <section id="section-datahub">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col1">
-          <img src="img/forest.jpeg" alt="BVRC Data Hub">
+          <img class="img-box" src="img/dhub-square.jpg" alt="BVRC Data Hub">
         </div>
         <div class="col-md-6 col2">
           <div class="abt-heading">The Data Hub</div>
@@ -53,10 +53,10 @@
           <div class="abt-body">
             The Bulkley Valley Research Centre (BVRC) is an independent, not-for-profit society conducting high-quality, interdisciplinary research on natural and cultural resources. We create learning and extension opportunities for both our members and the community through workshops, conferences and other networking events, and support our community by promoting the region and investing locally. Our purpose is to provide the science required for sustainable resource management.                  
           </div>
-          <div class="abt-button"><a class="btn-blue" href="https://bvcentre.ca/">Learn More</a></div>
+          <div class="abt-button"><a class="btn-blue" href="/bvrc">Learn More</a></div>
         </div>
         <div class="col-md-6 col2">
-          <img src="img/forest.jpeg" alt="BVRC Data Hub">
+          <img class="img-box" src="img/bvrc-square.jpg" alt="BVRC">
         </div>
       </div>
     </div>
@@ -68,7 +68,8 @@
         <div class="col-md-12 ">
           <div class="heading">Funding Partners</div>
           <div class="partner-imgs">
-            <img class="rbc" src="img/rbc-tfn.png" alt="RBC Tech For Nature">
+            <a href="https://www.rbc.com/community-social-impact/climate/environmental-donations/index.html" target="_blank"><img class="rbc" src="img/rbc-tfn.png" alt="RBC Tech For Nature"></a>
+            <a href="https://pics.uvic.ca/" target="_blank"><img class="pics" src="img/pics-logo.png" alt="PICS"></a>
           </div>
         </div>
       </div>
