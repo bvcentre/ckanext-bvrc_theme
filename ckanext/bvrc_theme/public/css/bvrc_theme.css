@@ -1,5 +1,5 @@
 body{
-  background-color: #fffcf3 !important;
+  background-color: transparent !important;
 }
 
 .main{
@@ -38,12 +38,39 @@ a:hover, a:active{
 /*--------------------------- 
     HEADER
 -------------------------- */
-.container-nav{
+.nav-pills{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: left !important;
+  width: 50%;
+}
+
+.navbar-left{
+  display: flex !important;
+  justify-content: center !important;
+  text-align: left !important;
+  width: 64%;
+}
+
+.container{
+  padding-left: 0% !important;
+  padding-right: 0% !important;
+}
+
+.masthead .container-nav{
+    position: relative;
+    width: 100% !important; /* Added */
     background-color: #d2dee1 !important;
     width: 100% !important;
     padding: 0 !important;
     margin: 0 !important;
 } 
+
+.masthead .container {
+  position: relative;
+  width: 100% !important; /* Added */
+}
 
 .container-logo{
     width: 100% !important;
@@ -58,7 +85,7 @@ header.masthead{
 }
 
 .account-masthead{
-    background-color: #26201d !important;
+    background-color: #15689d !important;
 }
 
 .account-masthead .account ul li a{
@@ -75,7 +102,7 @@ header.masthead{
 .masthead .nav > li:hover a{
     border-radius: none !important;
     background-color: transparent !important;
-    color: #33afea !important;
+    color: #15689d !important;
     transition: all .4s ease !important;
     -webkit-transition: all .4s ease !important;
 }
@@ -83,7 +110,7 @@ header.masthead{
 .masthead .nav > li:hover a, .masthead .nav li:focus a, .masthead .nav > li.active a{
     border-radius: none !important;
     background-color: transparent !important;
-    color: #33afea !important;
+    color: #15689d !important;
 }
 
 
@@ -93,19 +120,19 @@ header.masthead{
 }
 
 .masthead .logo-bvrc img {
-  margin-top: 30px !important;
-  max-height: 90px !important;
+  margin-top: 45px !important;
+  max-height: 67px !important;
 }
 
 .by{
   color: #26201b;
   font-size: 20px;
   width: 50px !important;
-  margin: 0 35px 0 35px;
+  margin: 0 15px 0 35px;
   float: left;
   display: flex;
   align-items: center;
-  height: 130px;
+  height: 140px;
 }
 
 .masthead .navbar-collapse{
@@ -114,11 +141,14 @@ header.masthead{
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
   padding-left: 45px;
-  margin-top: 30px !important;
+  margin-top: 150px !important;
+  width: 100% !important;
+
 }
 
 .navbar-collapse{
     flex-grow: unset !important;
+    background-color: #d2dee1;
 }
 
 .navbar-toggle{
@@ -134,11 +164,14 @@ header.masthead{
   -webkit-transition: all .4s ease !important;
 }
 
+.masthead .section{
+  margin-left: 20px;
+}
 /*--------------------------- 
     HOME
 -------------------------- */
 .hero{
-    background-image: url(/img/cover.jpg) !important;
+    background-image: url(/img/hero-cover.jpg) !important;
     height: 85vh !important;
     width: 100%;
     background-attachment: fixed !important;
@@ -168,12 +201,12 @@ header.masthead{
     position: absolute;
     z-index: 20;
     margin: auto;
-    margin-top: 230px;
+    margin-top: 320px;
     text-align: left;
 }
 
 .header-text h1{
-    font-size: 25px;
+    font-size: 35px;
     text-transform: uppercase;
     letter-spacing: .2rem;
 }
@@ -252,18 +285,19 @@ header.masthead{
     margin-bottom: 30px !important;
     padding: 75px 75px 0px 75px !important;
     border-bottom: none !important;
+    background-color: transparent !important;
 }
     
 
 .search-form .search-input.search-giant input {
   font-size: 16px;
   padding: 15px;
-  width: 1000px;
+  background-color: transparent !important;
 } 
 
 .homepage .module-search{
   padding: 0px !important;
-  background-color: #fffcf3 !important;
+  background-color: transparent !important;
 }
 
 .homepage .module-search .module-content .heading {
@@ -276,9 +310,8 @@ header.masthead{
 }
 
 .homepage .module-search .tags {
-  padding-left: 70px !important;
   margin-top: -25px !important;
-  background-color: #fffcf3 !important;
+  background-color: transparent !important;
   color: #26201d !important;
   text-transform: uppercase;
   font: 12px;
@@ -289,12 +322,35 @@ header.masthead{
 .homepage .module-search .tags h3 {
   font-size: 17px !important;
   letter-spacing: .2rem;
+  color: #fff !important;
+}
+
+.tag{
+  color: #fff !important;
+  background-color: #33afea !important;
+}
+
+.tag:hover{
+  background-color: #22759c;
+  color: #fff !important;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+}
+
+.homepage .module-search .tag h3 a{
+  font-weight: normal !important;
+  text-transform: none !important;
 }
 
 /*--------------------------------------------------------------
 # Homepage - About Section
 --------------------------------------------------------------*/
- #section-datahub{
+.img-box{
+  width: 500px !important;
+  height: 500px !important;
+} 
+
+#section-datahub{
     padding: 70px 0 70px 0 !important;
     display: flex !important;
     justify-content: center;
@@ -409,7 +465,6 @@ header.masthead{
 }
 
 #funding-partners img{
-  border: solid white 10px;
 }
 
 #funding-partners .heading{
@@ -428,11 +483,23 @@ header.masthead{
   align-items: center;
 }
 
+.rbc{
+  width: 400px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.pics{
+  width: 375px;
+  height: auto;
+  margin-left: 20px;
+}
+
 /*--------------------------- 
     FOOTER
 -------------------------- */
   #site-footer {
-    background: #26201d !important;
+    background: #15689d !important;
     padding:25px 0 25px 0;
     color: #fff;
     font-size: 14px;
@@ -514,7 +581,7 @@ header.masthead{
   
   .footer-top .social-links a:hover {
     background: #33afea;
-    color: #fff;
+    color: #fff !important;
     text-decoration: none;
     transition: all .4s ease;
   -webkit-transition: all .4s ease;
@@ -555,15 +622,15 @@ header.masthead{
   }
 
   .footer-top .footer-links ul a {
-    color: #fff;
+    color: #fff !important;
     font-size: 15px !important;
   }
 
   .footer-top .footer-links ul a:hover {
-    color: #33afea;
-    text-decoration: none;
-    transition: all .4s ease;
-  -webkit-transition: all .4s ease;
+    color: #33afea !important;
+    text-decoration: none !important;
+    transition: all .4s ease !important;
+  -webkit-transition: all .4s ease !important;
   }
 
   .footer-top .footer-contact {
